@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
 }
 
 android {
@@ -32,6 +33,8 @@ android {
     }
     buildFeatures {
         mlModelBinding true
+        viewBinding true
+
     }
 }
 
@@ -78,4 +81,9 @@ dependencies {
     testImplementation 'junit:junit:'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //Agora SDK
+    implementation 'io.agora.rtc:full-sdk:4.0.1'
+
+    implementation ("commons-codec:commons-codec:1.11")
 }

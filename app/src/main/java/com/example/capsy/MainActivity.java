@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements AlgoListener {
         arrayList.add(new Algo(R.drawable.baseline_portrait_black_48, "Visitor Analysis", VisitorAnalysisActivity.class));
         arrayList.add(new Algo(R.drawable.baseline_portrait_black_48, "Face recognition", FaceRecognitionActivity.class));
         arrayList.add(new Algo(R.drawable.baseline_portrait_black_48, "Hide/Obscure Face", ObscureFaceActivity.class));
+        arrayList.add(new Algo(R.drawable.baseline_camera_24, "Video Call", VideoCallActivity.class));
 
         AlgoAdapter algoAdapter = new AlgoAdapter(arrayList, this);
         RecyclerView recyclerView = findViewById(R.id.main_recycler_view);
